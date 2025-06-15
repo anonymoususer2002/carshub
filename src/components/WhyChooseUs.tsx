@@ -5,76 +5,67 @@ const WhyChooseUs = () => {
   const features = [
     {
       number: "01",
-      icon: Shield,
-      title: "Trusted by millions",
-      description: "Over 1 million cars bought through our platform with complete satisfaction"
+      title: "Get the best price for your dream car and save up to 8% on ex-showroom rates"
     },
     {
       number: "02", 
-      icon: DollarSign,
-      title: "Best Price Guarantee",
-      description: "We ensure competitive deals that save you money on every purchase"
+      title: "Access custom insurance deals tailored for your ride."
     },
     {
       number: "03",
-      icon: Users,
-      title: "Expert Support Team",
-      description: "Professional guidance through every step of your car buying journey"
+      title: "Sell your car fast through social media, get top price with no hassle"
     },
     {
       number: "04",
-      icon: Wrench,
-      title: "Quality Assurance",
-      description: "Rigorous inspections ensure you get the best quality vehicles"
+      title: "Expert guidance to help you choose the perfect car."
     },
     {
       number: "05",
-      icon: Award,
-      title: "Award Winning Service",
-      description: "Recognized excellence in customer service and satisfaction"
+      title: "Claim Rs 5000 off on Ceramic/ PPF coating for added value"
     },
     {
       number: "06",
-      icon: Clock,
-      title: "Quick & Easy Process",
-      description: "Streamlined procedures make car buying fast and hassle-free"
+      title: "Compare options, schedule test drives, and explore all services conveniently in one place."
     }
   ];
 
   return (
-    <section className="bg-gray-900 py-20">
-      <div className="container mx-auto px-4">
+    <section className="bg-gray-900 py-20 relative overflow-hidden">
+      {/* Background car silhouette */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-10">
+        <div className="text-[600px] font-bold text-gray-700 select-none">
+          Cars hub
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Why Choose Us?
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature) => {
-            const IconComponent = feature.icon;
-            return (
-              <div 
-                key={feature.number} 
-                className="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2 group"
-              >
-                <div className="flex items-center mb-4">
-                  <span className="text-3xl font-bold text-yellow-500 mr-4">
-                    {feature.number}
-                  </span>
-                  <IconComponent className="text-yellow-500 group-hover:scale-110 transition-transform duration-300" size={32} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {feature.description}
-                </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {features.map((feature) => (
+            <div 
+              key={feature.number} 
+              className="text-white"
+            >
+              <div className="mb-4">
+                <span className="text-6xl font-bold text-white">
+                  {feature.number}
+                </span>
               </div>
-            );
-          })}
+              <p className="text-lg leading-relaxed">
+                {feature.title}
+              </p>
+            </div>
+          ))}
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+          <p className="text-gray-400 text-lg mb-6">
+            Cars hub, your car purchase assistant
+          </p>
+          <button className="bg-transparent border border-white text-white font-bold py-3 px-8 rounded text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
             Register Now
           </button>
         </div>
