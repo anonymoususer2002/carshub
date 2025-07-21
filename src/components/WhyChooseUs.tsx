@@ -1,19 +1,18 @@
-
 import { Shield, DollarSign, Users, Wrench, Award, Clock } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
     {
       number: "01",
-      title: "Get the best price for your dream car and save up to 8% on ex-showroom rates"
+      title: "Get the best price for your dream car and save up to 8% on on-road rates"
     },
     {
       number: "02", 
-      title: "Access custom insurance deals tailored for your ride."
+      title: "Access the cheapest and best insurance deals from the dealers."
     },
     {
       number: "03",
-      title: "Sell your car fast through social media, get top price with no hassle"
+      title: "Sell your car fast through our platform, get reasonable price with no hassle"
     },
     {
       number: "04",
@@ -21,11 +20,11 @@ const WhyChooseUs = () => {
     },
     {
       number: "05",
-      title: "Claim Rs 5000 off on Ceramic/ PPF coating for added value"
+      title: "Redeem the quote request payment thtough partnering Ceramic/ PPF coating centres."
     },
     {
       number: "06",
-      title: "Compare options, schedule test drives, and explore all services conveniently in one place."
+      title: "Compare options, find the best insurance, loans and explore all services conveniently in one place."
     }
   ];
 
@@ -61,13 +60,47 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
+        {/* Call to action */}
         <div className="text-center mt-16">
           <p className="text-gray-400 text-lg mb-6">
-            Cars hub, your car purchase assistant
+            Register your interest and get all services free.
           </p>
-          <button className="bg-transparent border border-white text-white font-bold py-3 px-8 rounded text-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
+          <button className="bg-transparent border border-white text-white font-bold py-3 px-8 rounded text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 mb-8">
             Register Now
           </button>
+
+          {/* Formspree Contact Form */}
+          <form 
+            action="https://formspree.io/f/mvgqzwqn" 
+            method="POST" 
+            className="max-w-xl mx-auto space-y-4 text-left"
+          >
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Your Name" 
+              required 
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Your Email" 
+              required 
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <textarea 
+              name="message" 
+              placeholder="Your Message (Optional)" 
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <button 
+              type="submit" 
+              className="w-full bg-white text-gray-900 font-bold py-3 px-6 rounded hover:bg-gray-200 transition-all duration-300"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -75,3 +108,4 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
+

@@ -10,22 +10,18 @@ const AboutSection = () => {
           
           <div className="bg-gray-700 rounded-2xl p-8 md:p-12">
             <p className="text-gray-300 leading-relaxed text-lg mb-6">
-              At Cars Hub, we've revolutionized the way people buy and sell cars. Founded with a mission to make 
-              quality vehicles affordable and accessible, we've built a platform that brings together buyers and 
-              sellers across the nation. Our dedicated team works tirelessly to ensure every transaction is smooth, 
-              transparent, and satisfying.
+              At Cars Hub, we've revolutionized the way people purchase, get quotes, get insurances, take loans and sell cars. Founded with a mission to ensure your 
+              dream ride delivered to your doorstep at the best price, we've built a platform that brings together buyers and 
+              dealers across the nation. Our dedicated platform helps you get the best rates from all the dealers, compare, get advice on cars, taking insurances, loans and so on...
             </p>
             
             <p className="text-gray-300 leading-relaxed text-lg mb-6">
-              With over a decade of experience in the automotive industry, we understand what matters most to our 
-              customers: reliability, affordability, and trust. Our rigorous inspection process, competitive pricing, 
-              and comprehensive warranty options give you the confidence to make the right choice.
+              With curious eyes we have found the solution for ensureing best prices for our users, we have partnered with various dealers to generate competitive quotes for users and ensure the best price possible.
             </p>
             
             <p className="text-gray-300 leading-relaxed text-lg mb-8">
-              Whether you're a first-time buyer or an experienced car enthusiast, our expert team is here to guide 
-              you through every step of the process. From initial consultation to final delivery, we're committed 
-              to exceeding your expectations and delivering an unmatched car buying experience.
+              Whether you're a first-time buyer or an experienced car enthusiast, our expert car advice team is here to guide 
+              you through every step of the process. Enjoy our hassle free service to purchase loans, get insurances and sell/buy reliable and quality inspected used cars at best price.
             </p>
 
             <div className="text-center">

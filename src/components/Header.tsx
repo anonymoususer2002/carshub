@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Menu, X, Facebook, Instagram, MessageSquare } from 'lucide-react';
 import Chat from './ui/chat';
+import logo from '../img/logo.jpeg'; // or './img/logo.jpeg' depending on path
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,37 +14,20 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              {/* Logo with car silhouette design */}
+              {/* Logo with image and text */}
               <div className="relative">
-                <div className="flex items-center">
-                  {/* Car silhouette logo */}
-                  <div className="relative mr-3">
-                    <svg width="60" height="30" viewBox="0 0 60 30" className="text-white">
-                      <path
-                        d="M5 20 C5 20, 10 8, 25 8 C40 8, 50 12, 55 20 L50 20 C50 20, 45 15, 30 15 C15 15, 10 20, 5 20 Z"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M8 22 C8 22, 12 18, 30 18 C48 18, 52 22, 52 22"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-white">
-                      CARS HUB
-                    </div>
-                    <div className="text-xs text-gray-300 -mt-1">
-                      Cars hub, your car purchase assistant
-                    </div>
-                  </div>
+                <div className="flex items-center space-x-3">
+                  {/* JPG Image Logo */}
+                  <img
+                    src={logo}
+                    alt="CARS HUB Logo"
+                    className="w-24 h-17 object-contain rounded-md"
+                  />
                 </div>
               </div>
             </div>
-            
+
+
             <nav className="hidden md:flex space-x-8">
               <a href="#" className="text-white hover:text-yellow-400 transition-colors">Home</a>
               <a href="#" className="text-white hover:text-yellow-400 transition-colors">Cars</a>
